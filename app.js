@@ -371,15 +371,121 @@
 
 
 
-const btn  = document.getElementById("btn");//whenever events  happen ,
-const div = document.getElementById("div");
-btn.addEventListener("click",(e)=>{
-    // e.stopPropagation();//for stop bubbling
-    console.log(e.target);
-    console.log("button clicked")
-});
+// const btn  = document.getElementById("btn");//whenever events  happen ,
+// const div = document.getElementById("div");
+// btn.addEventListener("click",(e)=>{
+//     // e.stopPropagation();//for stop bubbling
+//     console.log(e.target);
+//     console.log("button clicked")
+// });
 
-div.addEventListener("click",(e)=>{
-    console.log(e.target);
-    console.log("div button clicked");
-});    
+// div.addEventListener("click",(e)=>{
+//     console.log(e.target);
+//     console.log("div button clicked");
+// }); 
+
+
+
+
+
+
+// console.log("Starting");
+// function myfunction(){
+//     console.log("Hello world");
+// }
+// myfunction();
+// console.log("Ending");
+
+
+//try to write Asynchronous
+
+// console.log("Starting");
+// function myfunction(){
+//     setTimeout(()=>{ console.log("Hello world");},5000);
+//     // console.log("Hello world");
+// }
+// myfunction();
+// console.log("Ending");
+
+
+
+
+// console.log("Starting");
+// function myfunction(){
+//     setTimeout(()=>{ return "Hello world";},5000);//Asynchronous output undefined
+//     // console.log("Hello world");
+// }
+// const data = myfunction();
+// console.log(data);
+// console.log("Ending");
+
+
+
+
+// console.log("Starting");
+// function myfunction(cb){
+//     setTimeout(()=>{ cb ("Hello world");},5000);//Asynchronous output undefined
+    
+// }
+// myfunction((data)=>{console.log(data)});
+
+// console.log("Ending");
+
+
+//promices concept interview questions
+//what is callback hell
+
+
+// console.log("Starting");
+// function login(cb){
+//     setTimeout(()=>{ cb ("logged in....");},1000);//Asynchronous output undefined
+    
+// }
+// function videoList(cb){
+//     setTimeout(()=>{
+//         cb("video list....");
+//     },2000);
+// }
+// function myVideo(cb){
+//     setTimeout(()=>{
+//         cb("myVideo....");
+//     },3000);
+// }
+// login((userdata)=>{
+//     console.log(userdata);
+//     videoList((videoList)=>{
+//         console.log(videoList);
+//         myVideo((myVideo)=>{
+//             console.log(myVideo);
+//         })
+//     })
+// })
+
+// console.log("Ending");
+
+
+//create promises using constructor
+
+
+// const mypromise =new Promise((res,rej)=>{
+//     // res("ygreijrlijit hgthjtljthlllljh");
+//     rej("error")
+// });
+// console.log(mypromise);
+// mypromise.then((data)=>{
+//     console.log(data);
+// })
+
+// mypromise.then((data)=>{
+//     console.log(data);
+// }).catch((err)=>{
+//     console.log(err);
+// });
+
+function videoList(){
+    return new Promise(function(resolve,reject){
+        setTimeout(()=>{
+            resolve("video list....");
+        },2000);
+    });
+}

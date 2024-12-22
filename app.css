@@ -1,0 +1,153 @@
+*{
+	padding: 0;
+	margin: 0;
+	
+}
+body{
+	background-image: url(Budha.jpg);
+	justify-content: flex-start;
+}
+.Profile{
+	height: 400px;
+	width: 300px;
+	display: inline-block;
+	background-image: url(Noida.jpg);
+	background-size: contain;
+	border:2px solid black;
+	box-shadow: 0 0 1rem rgba(0 0 0.1);
+	margin-left: 300px;
+	margin-top: 20px;
+
+}
+.Like{
+	height: 60px;
+	width: 50px;
+	color: white;
+	border:2px double white;
+	background-color: #008080;
+	border-radius: 50%;
+	margin-left: 250px;
+	flex-wrap: wrap;
+	/*border:none;*/
+	
+	margin-top: 90px;
+
+}
+#Share{
+	height: 60px;
+	width: 50px;
+	background-color: green;
+	border-radius: 50%;
+	border:2px double white;
+	
+	margin-left: 250px;
+	margin-top: 20px;
+
+}
+
+#change{
+	height: 40px;
+	width: 50px;
+	border:2px double white;
+	background-color: orange;
+	margin-left: 250px;
+	margin-top: 10px;
+	border-radius: 30%;
+}
+#dIS{
+	height: 40px;
+	width: 50px;
+	border:2px double white;
+	background-color: red;
+	margin-left: 250px;
+	margin-top: 10px;
+	border-radius: 10%;
+}
+input{
+	border:2px solid green;
+}
+#Comment{
+	color: white;
+	font-size: 4vmin;
+}
+
+#Viral{
+	text-decoration: none;
+	color: #FF4500;
+	font-size: 4vmin;
+	margin-left: 0px;
+}
+#Postis{
+	text-decoration: none;
+	color: green;
+	font-size: 4vmin;
+	margin-left: 0px;
+}
+.Postfile{
+	height: 400px;
+	width: 200px;
+	display: inline-block;
+	background-image: url(pexels.jpeg);
+	background-size: contain;
+	border:2px solid black;
+	box-shadow: 0 0 1rem rgba(0 0 0.1);
+	margin-left: 300px;
+	margin-top: 20px;
+
+}
+.Love{
+	height: 60px;
+	width: 50px;
+	color: white;
+	border:2px double white;
+	background-color: #B8860B;
+	border-radius: 50%;
+	margin-left: 250px;
+	flex-wrap: wrap;
+	/*border:none;*/
+	
+	margin-top: 120px;
+
+}
+#Save{
+	height: 60px;
+	width: 50px;
+	background-color: #BC8F8F;
+	border-radius: 50%;
+	border:2px double white;
+	
+	margin-left: 250px;
+	margin-top: 30px;
+
+}
+#choice{
+	height: 40px;
+	width: 50px;
+	border:2px double white;
+	background-color: #8FBC8B;
+	margin-left: 250px;
+	margin-top: 10px;
+	border-radius: 30%;
+}
+#Post{
+	height: 40px;
+	width: 50px;
+	color: white;
+	margin-left: 250px;
+	border:2px double white;
+	background-color: olive;
+	border-radius: 30%;
+	font-size: 3vmin;
+	margin-top: 20px;
+}
+#file{
+	height: 20px;
+	width: 60px;
+	color: olive;
+	border:2px double white;
+	background-color: olive;
+	border-radius: 30%;
+	margin-top: 30px;
+
+
+}
